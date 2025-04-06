@@ -1,0 +1,6 @@
+pandas
+streamlit
+pymongo
+sqlalchemy
+ydata_profiling
+streamlit_pandas_profiling
