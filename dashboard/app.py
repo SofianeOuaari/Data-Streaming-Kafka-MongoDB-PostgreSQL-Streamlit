@@ -53,16 +53,5 @@ while True:
         st_profile_report(profile)
         time.sleep(5)
 
-result = db_engine_conn.execute(text("SELECT * FROM covid.covid_data"))
-rows = result.fetchall()
-print(rows)
-st.write(rows)
-
-df = pd.read_sql_query('SELECT * FROM covid.covid_data', con=db_engine_conn)
-st.dataframe(df)
-
-# Step 5: Iterate through rows (if needed)
-for row in rows:
-    print(row)
 
 
