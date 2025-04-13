@@ -51,7 +51,7 @@ while True:
         st.dataframe(df)
         profile = ProfileReport(df, title="Profiling Report")
         st_profile_report(profile)
-        time.sleep(5)
+        time.sleep(30)
 
 
 
