@@ -5,12 +5,10 @@ import json
 import time
 
 
-
-
-df = pd.read_csv('data/worldwide-aggregate.csv')
+df = pd.read_csv("data/worldwide-aggregate.csv")
 
 print(df.head())
-messages = df.to_dict(orient='records')
+messages = df.to_dict(orient="records")
 
 connection_not_successful = True
 
@@ -18,8 +16,10 @@ connection_not_successful = True
 while connection_not_successful:
     try:
         producer = KafkaProducer(
-            bootstrap_servers='kafka:29092',  # Connect to the Kafka container
-            value_serializer=lambda v: json.dumps(v).encode('utf-8')  # Serialize data to JSON
+            bootstrap_servers="kafka:29092",  # Connect to the Kafka container
+            value_serializer=lambda v: json.dumps(v).encode(
+                "utf-8"
+            ),  # Serialize data to JSON
         )
 
         print("Connection to Kafka broker successful!")
@@ -36,6 +36,6 @@ while connection_not_successful:
 
         producer.close()
         print("Finished producing messages.")
-    
-    except (NoBrokersAvailable, KafkaError) as e: 
+
+    except (NoBrokersAvailable, KafkaError) as e:
         print(e)
