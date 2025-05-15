@@ -37,7 +37,7 @@ The data used for this project is downloaded from Kaggle entitled "Real-time Cov
 ## Installation
 1. Clone the repository:
 ```bash
- git clone https://github.com/SofianeOuaari/Real-Time-Time-Series-Covid-Data-Streaming-using-Python-Docker-and-Kafka.git
+ git clone https://github.com/SofianeOuaari/Data-Streaming-Kafka-MongoDB-PostgreSQL-Streamlit.git
 ```
 
 2. Run the containers: 
