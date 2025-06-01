@@ -8,6 +8,8 @@ A complete data streaming pipeline using time-series COVID-19 data. The project 
 - Receiving the data through a Kafka Consumer. 
 - Using Apache Kafka as the messaging backbone for the data streaming. 
 - Running all components in isoaled Docker containers. 
+- Analyzing the received using a ydata Profiling Report. 
+- Update the Streamlit app each time new data is received.
 
 
 ## Dataset
@@ -58,13 +60,20 @@ docker-compose down -v
 
 
 You can access the Kafka UI by visiting: ``` http://localhost:8080/ ```
+![alt text](attachments/Kafka_UI.png)
 
 ## Mongo Express
 
 You can access the Mongo Express UI by visiting: ``` http://localhost:8081 ```
+![alt text](attachments/MongoDB_UI_1.png)
+![alt text](attachments/MongoDB_UI_2.png)
 ## Streamlit Dashboard 
 
 You can acces the Streamlit dashboard by visiting: ``` http://localhost:8502/ ```
 
+![alt text](attachments/Streamlit_Dashboard_1.png)
+![alt text](attachments/Streamlit_Dashboard_2.png)
+![alt text](attachments/Streamlit_Dashboard_3.png)
+![alt text](attachments/Streamlit_dashboard_4.png)
 ## Pg Admin
 You can access the PostgreSQL Admin page by visiting: ``` http://localhost:5000/ ```
