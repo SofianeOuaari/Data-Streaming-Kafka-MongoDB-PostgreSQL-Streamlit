@@ -77,3 +77,4 @@ You can acces the Streamlit dashboard by visiting: ``` http://localhost:8502/ ``
 ![alt text](attachments/Streamlit_dashboard_4.png)
 ## Pg Admin
 You can access the PostgreSQL Admin page by visiting: ``` http://localhost:5000/ ```
+![alt text](attachments/PostgreSQL.png)
