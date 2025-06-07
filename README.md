@@ -3,6 +3,7 @@
 A complete data streaming pipeline using time-series COVID-19 data. The project ingests data through Apache Kafka, stores it in both MongoDB (NoSQL) and PostgreSQL (SQL), and visualizes insights via an interactive Streamlit dashboard. Includes automated EDA with YData Pandas Profiling.
 
 
+![alt text](attachments/Architecture_Workflow_MLOps.jpg)
 ## Project Overview 
 - Sending data from a Kafka Producer. 
 - Receiving the data through a Kafka Consumer. 
@@ -70,7 +71,7 @@ You can access the Mongo Express UI by visiting: ``` http://localhost:8081 ```
 ## Streamlit Dashboard 
 
 You can acces the Streamlit dashboard by visiting: ``` http://localhost:8502/ ```
-
+![alt text](attachments/Ydata_Profiling_Summary.png)
 ![alt text](attachments/Streamlit_Dashboard_1.png)
 ![alt text](attachments/Streamlit_Dashboard_2.png)
 ![alt text](attachments/Streamlit_Dashboard_3.png)
